@@ -23,3 +23,7 @@ category_series = [df_remco, df_bjorn, df_maaike, df_saskia]
 names = ['Remco', 'Björn', 'Maaike', 'Saskia']
 
 df_perc = IRR.stack_series(category_series, names)
+
+df_perc, perc_agreement = IRR.perc_agreement(df_perc)
+
+print(perc_agreement)
